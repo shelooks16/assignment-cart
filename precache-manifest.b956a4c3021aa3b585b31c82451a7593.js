@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "06a5c7fb935fa5befe0d7bf86faa97b3",
+    "revision": "4688ae099a2036038024d71a7df08f65",
     "url": "/assignment-cart/index.html"
   },
   {
-    "revision": "682a65a2c247aa2442c3",
+    "revision": "e300271ed972f8be41ec",
     "url": "/assignment-cart/static/css/2.d9ad5f5c.chunk.css"
   },
   {
-    "revision": "c1625fcb06c2952a7456",
+    "revision": "8cc67066dc04e5b322fc",
     "url": "/assignment-cart/static/css/main.1a5150fb.chunk.css"
   },
   {
-    "revision": "682a65a2c247aa2442c3",
-    "url": "/assignment-cart/static/js/2.b317af28.chunk.js"
+    "revision": "e300271ed972f8be41ec",
+    "url": "/assignment-cart/static/js/2.fa394f24.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/assignment-cart/static/js/2.b317af28.chunk.js.LICENSE.txt"
+    "url": "/assignment-cart/static/js/2.fa394f24.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c1625fcb06c2952a7456",
-    "url": "/assignment-cart/static/js/main.cca99580.chunk.js"
+    "revision": "8cc67066dc04e5b322fc",
+    "url": "/assignment-cart/static/js/main.762dead2.chunk.js"
   },
   {
     "revision": "4c700afb5751f1cdeaa9",
