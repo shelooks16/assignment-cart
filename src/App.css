@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media screen and (min-width: 768px) {
+  .fixed-md {
+    position: fixed;
+  }
+}
+
+html,
+body,
+body > div {
+  background-color: var(--light);
+}

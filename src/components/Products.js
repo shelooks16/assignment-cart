@@ -1,4 +1,13 @@
 import React, { useCallback } from 'react';
+import {
+  Button,
+  Card,
+  CardBody,
+  CardImg,
+  CardSubtitle,
+  CardText,
+  CardTitle,
+} from 'reactstrap';
 import { useCartDispatch } from '../lib/cart.context';
 
 const Products = ({ products }) => {
@@ -29,22 +38,25 @@ const Products = ({ products }) => {
       thumbnail,
       ...restOfProduct
     }) => (
-      <div key={restOfProduct.id}>
-        <img src={thumbnail} alt={name} width={50} />
-        <div>{name}</div>
-        <div>
-          {currency} {price}
-        </div>
-        <div>{inStock ? 'In stock' : 'Out of stock'}</div>
-        {delivery && <div>Delivery available</div>}
-        <button
-          type="button"
-          disabled={!inStock}
-          onClick={() => handleAddToCart(restOfProduct.id, price, inStock)}
-        >
-          Add to cart
-        </button>
-      </div>
+      <Card key={restOfProduct.id} className="mb-3">
+        <CardImg top width="100%" src={thumbnail} alt={name} className="h-50" />
+        <CardBody className="font-weight">
+          <CardTitle className="h5">{name}</CardTitle>
+          <CardSubtitle className="h5 mb-2">${price}</CardSubtitle>
+          {delivery && <CardText className="mb-1">Delivery available</CardText>}
+          <CardText className={inStock ? 'text-success' : 'text-danger'}>
+            {inStock ? 'In stock' : 'Out of stock'}
+          </CardText>
+          <Button
+            type="button"
+            color="dark"
+            disabled={!inStock}
+            onClick={() => handleAddToCart(restOfProduct.id, price, inStock)}
+          >
+            Add to cart
+          </Button>
+        </CardBody>
+      </Card>
     )
   );
 };

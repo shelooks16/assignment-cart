@@ -1,16 +1,17 @@
 import React from 'react';
+import { CustomInput } from 'reactstrap';
 
 const FilterCheckbox = ({ id, name, checked, onChange, label }) => {
   return (
     <div>
-      <input
+      <CustomInput
         type="checkbox"
         id={id}
         name={name}
         checked={checked}
         onChange={onChange}
+        label={label}
       />
-      <label htmlFor={id}>{label}</label>
     </div>
   );
 };
